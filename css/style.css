@@ -1,0 +1,335 @@
+/*Paleta ff4000-000614-135b89-eee5e9-faaa8d*/
+
+:root {
+  --cor-destaque: #ff4000;
+  --cor-secundaria: #135b89;
+  --cor-background: #eee5e9;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #242424;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    color: #000614;
+  }
+
+  header{
+    display: block;
+  }
+
+  .container2{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    height: 50vh; 
+  }
+
+  .title-p{
+    font-size: larger;
+    color: var(--cor-destaque);
+  }
+
+  .div1 a{
+    text-decoration: none;
+    color: var(--cor-destaque);
+  }
+
+  .div2, .div1{
+  width: auto;
+    background-color:var(--cor-background) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   padding: 0 2em;
+   text-align: justify;
+   height: auto;
+  }
+
+  .div2 h3, .div1 h3{
+    color: var(--cor-secundaria);
+    text-align: center;
+    text-shadow: 1px 1px white;
+    border-bottom:solid 1px var(--cor-destaque);
+    border-top:solid 1px var(--cor-destaque);
+    border-radius: 10px 10px;
+    padding: 10px 10px;
+  }
+
+  .div2 p, .div1 p{
+    font-weight:600;
+    
+  }
+
+  .div2 p span{
+    color: var(--cor-secundaria);
+    text-align: center;
+    text-shadow: 1px 1px white;
+    border-radius: 10px 10px;
+    font-weight: 1100;
+  }
+
+  .div2 h4{
+    color: var(--cor-secundaria);
+    text-align: center;
+    text-shadow: 1px 1px white;
+    border-bottom:solid 1px var(--cor-destaque);
+    border-top:solid 1px var(--cor-destaque);
+    border-radius: 10px 10px;
+    padding: 10px 10px;
+
+  }
+
+  .div2 h4 a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+  }
+
+  .div2 h4 button{
+    border-bottom: solid 1px #000614;
+    border-top: solid 1px #000614;
+    border-left: solid 1px var(--cor-secundaria);
+    border-right: solid 1px var(--cor-secundaria);
+    box-shadow: black;
+    border-radius: 10px 10px;
+    padding: 5px 5px;
+  }
+
+  .div2 h4 a:hover{
+    color: var(--cor-destaque);
+  }
+
+  .div2 h4 button:hover{
+    transform: scale(1.1);
+  }
+
+#moneyImg{
+  width: 8%;
+  height: 5%;
+}
+ 
+#moneyImg{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    animation: girarInfinitamente 5s linear infinite;
+}
+
+@keyframes girarInfinitamente {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+section.module p{
+  margin-bottom: 40px;
+}
+
+section.module:last-child{
+  margin-bottom: 0;
+}
+
+section.module.parallax h2{
+  margin-bottom: 40px;
+  font-size: 30px;
+  color:var(--cor-background) ;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background-color:rgba(0, 0, 0,0.8);
+  border-radius: 10px 0 10px 0;
+  text-shadow: 1px 1px var(--cor-background);
+}
+
+section.module.parallax2 h2{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  right: 40%
+}
+
+section.module.parallax h3{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align:center;
+  font-size: 30px;
+  color:var(--cor-background) ;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  background-color:rgba(0, 0, 0,0.8);
+  border-radius: 10px 0 10px 0;
+  text-shadow: 1px 1px var(--cor-background);
+}
+
+
+section.module.content{
+  padding: 40px 0;
+  background-color:  var(--cor-background);
+}
+
+section.module.parallax{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Anotação para estudo: é esse background-attachment que dá o efeito do parallax!*/
+  background-size: cover;
+  -webkit-background-size: cover;  /* Anotação para estudo, podemos colocar assim para se adaptar a todos os navegadores*/
+  -moz-background-size: cover;
+  -o-brackground-size: cover;
+}
+
+
+
+section.module.parallax1{
+  background-image: url("../src/fundo.jpg");
+}
+
+section.module.parallax2{
+  background-image: url("../src/pilhas-de-moedas-dispostas-em-um-grafico-de-barras.jpg")
+}
+
+section.module.parallax3{
+  background-image: url("../src/graph_arrow.jpg")
+}
+
+
+.container3{
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+  height: 50%;
+  text-align: center;
+
+}
+
+.container3 p {
+  font-weight:600;
+  border-top:solid 1px var(--cor-destaque);
+  border-bottom:solid 1px var(--cor-destaque);
+  border-radius: 10px 10px;
+  padding: 10px 10px;
+  
+}
+
+#ebook{
+  border-radius: 10px 10px;
+  width: 70%;
+  height: 70%;
+  margin: 20px 20px;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.div-wrapper3{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 40px;
+  padding: 20px 20px;
+}
+
+.divForm{
+  align-self: center;
+  min-width: 300px;
+}
+
+form{
+  align-items: center;
+ 
+}
+
+fieldset{
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  color: 000614;
+  border-color: var(--cor-destaque);
+  background-color: rgba(19, 91, 137, 0.2);
+  border-radius: 30px 0;
+}
+
+fieldset ul{
+  align-items: center;
+  text-align: justify;
+}
+
+fieldset ul li::marker{
+  color: var(--cor-destaque);
+}
+
+form a{
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+form button{
+  border-bottom: solid 1px #000614;
+  border-top: solid 1px #000614;
+  border-left: solid 1px var(--cor-secundaria);
+  border-right: solid 1px var(--cor-secundaria);
+  box-shadow: black;
+  border-radius: 10px 10px;
+  padding: 5px 5px;
+}
+
+form a:hover{
+  color: var(--cor-destaque);
+}
+
+form button:hover{
+  transform: scale(1.1);
+}
+
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  border-top: 1px solid var(--cor-destaque);
+}
+
+footer h5{
+  color: white;
+}
+
+
+
+@media (min-width: 780px) {
+  .div-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .div-wrapper3{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #ebook{
+    height:20rem;
+  }
+  
+}
